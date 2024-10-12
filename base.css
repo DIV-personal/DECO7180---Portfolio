@@ -1,0 +1,265 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+
+header {
+  position: fixed; /* Fixing the header at the top */
+  top: 0;
+  width: 91%;
+  align-items: center;
+  z-index: 999;
+  background-color: rgba(165, 190, 106, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+h1 {
+  font-family: "MuseoModerno", sans-serif;
+  color: #f5f2ed;
+  font-size: 84px;
+  margin-top: 100px;
+}
+
+body {
+  font-family: "MuseoModerno", sans-serif;
+  background-color: #ffc6c5;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* main {
+  font-family: "MuseoModerno", sans-serif;
+  background-color: #f5f2ed;
+  padding: 20px;
+  margin-top: 150px;
+  border-radius: 10px;
+} */
+
+/* Nav Styles */
+nav {
+  flex-grow: 1;
+  text-align: center;
+  margin-top: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a.active {
+  color: #000;
+  border-bottom: 2px solid rgba(137, 112, 137, 1);
+}
+
+nav ul li a {
+  font-family: "MuseoModerno", Arial, sans-serif;
+  text-decoration: none;
+  color: #f5f2ed;
+  font-size: 30px;
+  padding: 10px 15px;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+/* CODE REFERENCE [1.b] Chat GPT Nav bar flowers
+Code explaination in README file */
+
+/* Flower positioning and size */
+.flower {
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+/* Specific flower positions */
+.flower-top {
+  top: -20px;
+  right: 60px;
+  height: 180px;
+}
+
+.flower-right {
+  top: -30px;
+  right: 200px;
+  height: 150px;
+}
+
+.flower-left {
+  top: -50px;
+  left: 40px;
+  height: 120px;
+}
+
+/* Rotate flowers on hover */
+.flower:hover {
+  transform: rotate(360deg);
+}
+
+.flower:hover {
+  animation: rotate360 50s linear infinite;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* CODE REFERENCE [1.a] Chat GPT - Rotating texts
+Code explaination in README file */
+
+/* Hi, bonjour, namaste, Hola section */
+.rotating-text {
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 70px;
+  color: rgba(137, 112, 137, 1);
+  text-align: left;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding-left: 10px;
+}
+
+.text {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/* About Me Section */
+
+.start-aboutme {
+  font-family: "MuseoModerno", sans-serif;
+  background-color: #f5f2ed;
+  padding: 15px;
+  margin-top: 150px;
+  border-radius: 10px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0px auto;
+  align-items: left;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-me p {
+  font-size: 16px;
+  color: rgba(137, 112, 137, 1);
+  text-align: justify;
+  max-width: 800px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.about-image {
+  height: auto;
+  width: 150px;
+  margin-left: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* CODE REFERENCE [1.e] Youtube Video
+Code explaination in README file */
+
+/* Journey section */
+
+.journey-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgba(154, 152, 219, 1);
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #a8c372;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 60px;
+}
+
+footer p {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Process Page */
+
+.process-bg {
+  font-family: "MuseoModerno", sans-serif;
+  background-color: rgba(154, 152, 219, 1);
+  padding: 15px;
+  margin-top: 120px;
+  border-radius: 10px;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0px auto;
+  align-items: right;
+}
+
+.process p {
+  font-size: 16px;
+  color: #f5f2ed;
+  text-align: justify;
+  max-width: 800px;
+  flex: 1;
+}

@@ -1,0 +1,153 @@
+/* Global Styles */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* Header Styles */
+
+body {
+  font-family: "MuseoModerno", sans-serif;
+  background-color: #ffc6c5;
+  padding-top: 120px;
+  margin: 0 12px;
+}
+
+main {
+  font-family: "MuseoModerno", sans-serif;
+  background-color: #f5f2ed;
+  padding: 20px;
+  margin-top: 150px;
+  border-radius: 10px;
+}
+
+/* CODE REFERENCE [1.a] Chat GPT - Rotating texts
+Code explaination in README file */
+
+/* Hi, bonjour, namaste, Hola section */
+.rotating-text {
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 70px;
+  color: rgba(137, 112, 137, 1);
+  text-align: left;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding-left: 10px;
+}
+
+.text {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/* About Me Section */
+
+.start-aboutme {
+  font-family: "MuseoModerno", sans-serif;
+  background-color: #f5f2ed;
+  padding: 15px;
+  margin-top: 150px;
+  border-radius: 10px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0px auto;
+  align-items: left;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-me p {
+  font-size: 16px;
+  color: rgba(137, 112, 137, 1);
+  text-align: justify;
+  max-width: 800px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.about-image {
+  height: auto;
+  width: 150px;
+  margin-left: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* CODE REFERENCE [1.e] Youtube Video
+Code explaination in README file */
+
+/* Journey section */
+
+.journey-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgba(154, 152, 219, 1);
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #a8c372;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 60px;
+}
+
+footer p {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Process Page */
+
+.process-bg {
+  font-family: "MuseoModerno", sans-serif;
+  background-color: rgba(154, 152, 219, 1);
+  padding: 15px;
+  margin-top: 120px;
+  border-radius: 10px;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0px auto;
+  align-items: right;
+}
+
+.process p {
+  font-size: 16px;
+  color: #f5f2ed;
+  text-align: justify;
+  max-width: 800px;
+  flex: 1;
+}

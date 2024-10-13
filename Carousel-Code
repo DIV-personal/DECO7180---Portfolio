@@ -1,0 +1,136 @@
+CSS
+
+.journey-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  background-color: rgba(154, 152, 219, 1);
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.journey-container {
+  max-width: 80em;
+  width: 100%;
+  padding: 40px;
+  background-color: #ffc6c5;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.slider-wrapper .image-list {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 30px;
+  overflow-x: scroll;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+  height: 450px;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+/* Carousel radio buttons */
+.carousel-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.carousel-button {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(154, 152, 219, 1);
+  color: rgba(154, 152, 219, 1);
+  border: none;
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.carousel-button.active {
+  background-color: rgba(154, 152, 219, 1);
+  color: rgba(154, 152, 219, 1);
+  border: solid white 2px;
+  transform: scale(1.2);
+}
+
+************************************************
+
+HTML
+
+<section class="journey-section">
+          <div class="journey-container">
+            <div class="slider-wrapper">
+              <div class="image-list">
+                <img
+                  src="./images/IMG_9284.jpg"
+                  alt="Paper prototyping studio"
+                  class="image-item"
+                />
+                <img
+                  src="./images/IMG_9217.PNG"
+                  alt="MVP presentation Studio"
+                  class="image-item"
+                />
+                <img
+                  src="./images/relaxing.JPG"
+                  alt="Recreational activity outside studio"
+                  class="image-item"
+                />
+                <img
+                  src="./images/user_research.JPG"
+                  alt="User testing in studio"
+                  class="image-item"
+                />
+                <img
+                  src="./images/IMG_8657.jpg"
+                  alt="Practical"
+                  class="image-item"
+                />    
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-button active">•</button>
+                <button class="carousel-button">•</button>
+                <button class="carousel-button">•</button>
+                <button class="carousel-button">•</button>
+                <button class="carousel-button">•</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+            perspiciatis a fuga officiis omnis deleniti, quis minus repellat
+            cumque! Consequatur inventore sed nobis autem repudiandae dolore
+            alias, possimus vitae accusamus.
+          </div>
+        </section>
+
+***************************************
+
+JS
+
+const carouselInner = document.querySelector(".image-list");
+const carouselButtons = document.querySelectorAll(".carousel-button");
+const images = carouselInner.children;
+let currentImage = 0;
+
+carouselButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    currentImage = index;
+    updateCarousel();
+  });
+});
+
+function updateCarousel() {
+  carouselInner.scrollLeft = currentImage * images[0].offsetWidth;
+  carouselButtons.forEach((button) => button.classList.remove("active"));
+  carouselButtons[currentImage].classList.add("active");
+}

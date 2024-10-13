@@ -1,0 +1,63 @@
+/* Global Styles */
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-family: "MuseoModerno", sans-serif;
+  background-color: #ffc6c5;
+  /* padding-top: 120px; */
+  margin: 0 20px;
+}
+
+main {
+  font-family: "MuseoModerno", sans-serif;
+  /* background-color: #f5f2ed; */
+  margin-top: 150px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #a8c372;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 60px;
+}
+
+footer p {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Process Page */
+
+.process-bg {
+  font-family: "MuseoModerno", sans-serif;
+  background-color: rgba(154, 152, 219, 1);
+  padding: 15px;
+  margin-top: 120px;
+  border-radius: 10px;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0px auto;
+  align-items: right;
+}
+
+.process p {
+  font-size: 16px;
+  color: #f5f2ed;
+  text-align: justify;
+  max-width: 800px;
+  flex: 1;
+}
